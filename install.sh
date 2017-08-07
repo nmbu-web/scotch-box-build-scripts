@@ -3,46 +3,24 @@
 # /*=================================
 # =            VARIABLES            =
 # =================================*/
-INSTALL_NGINX_INSTEAD=0
+INSTALL_NGINX_INSTEAD=1
 WELCOME_MESSAGE='
-MMMMMMMMMMMMMMMXl..........................cXMMMMMMMMMMMMMMM
-MMMMMMMMMMMMMMMK:.::....................;c.:KMMMMMMMMMMMMMMM
-MMMMMMMMMMMMMMM0:.lc....................:l,;0MMMMMMMMMMMMMMM
-MMMMMMMMMMMMMMMO;.l:....................;l,,OMMMMMMMMMMMMMMM
-MMMMMMMMMMMMMMWx.;l;....................,l:.dWMMMMMMMMMMMMMM
-MMMMMMMMMMMMMMNl.:l......................lc.lXMMMMMMMMMMMMMM
-MMMMMMMMMMMMMM0;.lc......................:l,;OMMMMMMMMMMMMMM
-MMMMMMMMMMMMMNd.;o;......................,l:.oNMMMMMMMMMMMMM
-MMMMMMMMMMMMM0;.lc........................:l.;OMMMMMMMMMMMMM
-MMMMMMMMMMMMNo.:l,.........................lc.lXMMMMMMMMMMMM
-MMMMMMMMMMMWO,.lc..........................:l,,kWMMMMMMMMMMM
-MMMMMMMMMMMXl.:l.....................;:::,..lc.cXMMMMMMMMMMM
-MMMMMMMMMMMO,,l:..................,codxxxdc.;l;,kWMMMMMMMMMM
-MMMMMMMMMMNd.:l,..,cloolc;......;ldxxxxxxxd:,lc.oNMMMMMMMMMM
-MMMMMMMMMMNl.cl..lOKKKKK0Oxl;;:ldxxxxxxxxxxc.cl.cXMMMMMMMMMM
-MMMMMMMMMMXl.cl.:OKKKKKKK0Oxooodxxxxxxxxxxxc.cl.cXMMMMMMMMMM
-MMMMMMMMMMNd.;l,,dO0000Okdolllllodxxxxxxxxo,,l:.oNMMMMMMMMMM
-MMMMMMMMMMM0:.cl.,ldddolllllllllllodxxxxxo;.cl.;OMMMMMMMMMMM
-MMMMMMMMMMMWO;.cl,,:clllllllllllllllloooc,,cl,,kWMMMMMMMMMMM
-MMMMMMMMMMMMW0:.:l:,,:cllllllllllllllc:,,:l:.:OWMMMMMMMMMMMM
-MMMMMMMMMMMMMMXd;,:c:;,,;:cccccccc:;,,,:cc,,oKWMMMMMMMMMMMMM
-MMMMMMMMMMMMMMMWKd;,:dkdl:;;;,,,;;:coxdc,;o0WMMMMMMMMMMMMMMM
-MMMMMMMMMMMMMMMMMWO;.lXMWNXK00000KNWMNd.;kWMMMMMMMMMMMMMMMMM
-MMMMMMMMMMMMMMMMMXo.;OWMMMMMMMMMMMMMMMKc.lXMMMMMMMMMMMMMMMMM
-MMMMMMMMMMMMMMMMNo.;OWMMMMMMMMMMMMMMMMM0:.lXMMMMMMMMMMMMMMMM
-MMMMMMMMMMMMMMMNd.;kWMMMMMMMMMMMMMMMMMMM0:.oNMMMMMMMMMMMMMMM
-MMMMMMMMMMMMMMMK:.oNMMMMMMMMMMMMMMMMMMMMWx.;0MMMMMMMMMMMMMMM
-MMMMMMMMMMMMMMMXl.:kXNWMMMMMMMMMMMMMMWWXOc.cXMMMMMMMMMMMMMMM
-MMMMMMMMMMMMMMMMXx:;;:clooddddddddoolc:;;:dKWMMMMMMMMMMMMMMM
-MMMMMMMMMMMMMMMMMWXOdl:;,,.........,;:cdkXWMMMMMMMMMMMMMMMMM
-  ______                      _        ______                ______
- / _____)            _       | |      (____  \              (_____ \
-( (____   ____ ___ _| |_ ____| |__     ____)  ) ___ _   _    _____) )___ ___
- \____ \ / ___) _ (_   _) ___)  _ \   |  __  ( / _ ( \ / )  |  ____/ ___) _ \
- _____) | (__| |_| || |( (___| | | |  | |__)  ) |_| ) X (   | |   | |  | |_| |
-(______/ \____)___/  \__)____)_| |_|  |______/ \___(_/ \_)  |_|   |_|   \___/
 
+ __      __  _ _                                          _   _ _  
+ \ \    / / | | |                                        | | (_) | 
+  \ \  / /__| | | _____  _ __ ___  _ __ ___   ___ _ __   | |_ _| | 
+   \ \/ / _ \ | |/ / _ \| `_ ` _ \| `_ ` _ \ / _ \ `_ \  | __| | | 
+    \  /  __/ |   < (_) | | | | | | | | | | |  __/ | | | | |_| | | 
+     \/ \___|_|_|\_\___/|_| |_|_|_|_| |_| |_|\___|_| |_|  \__|_|_| 
+              | \ | |  \/  |  _ \| |  | |        | |               
+   ___ _ __   |  \| | \  / | |_) | |  | |  ______| |__   _____  __ 
+  / _ \ `_ \  | . ` | |\/| |  _ <| |  | | |______| `_ \ / _ \ \/ / 
+ |  __/ | | | | |\  | |  | | |_) | |__| |        | |_) | (_) >  <  
+  \___|_| |_| |_| \_|_|  |_|____/ \____/         |_.__/ \___/_/\_\
+
+Denne boksen er laget ved hjelp av box.scotch.io vagrant oppsett. 
 For help, please visit box.scotch.io or scotch.io. Follow us on Twitter @scotch_io and @whatnicktweets.
+Eller kontakt oyvind.graham@nmbu.no
 '
 
 reboot_webserver_helper() {
