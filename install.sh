@@ -44,8 +44,9 @@ reboot_webserver_helper() {
 # /*=========================================
 # =            CORE / BASE STUFF            =
 # =========================================*/
-sudo apt-get update
-sudo apt-get -y upgrade
+DEBIAN_FRONTEND=noninteractive 
+sudo apt-get -y -o Dpkg::Options::="--force-confdef" -o Dpkg::Options::="--force-confold" upgrade 
+sudo apt-get -y -o Dpkg::Options::="--force-confdef" -o Dpkg::Options::="--force-confold" update 
 sudo apt-get install -y build-essential
 sudo apt-get install -y tcl
 sudo apt-get install -y software-properties-common
